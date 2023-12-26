@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/a42570f4e1.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>collections bags</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color:cornsilk;
+    }
+
+    .main {
+      background-color: dimgray;
+      height: 80px;
+      width: 100%;
+      /* position:fixed; */
+      float: left;
+    }
+
+    .burger {
+      padding: 20px;
+    }
+
+    .icons {
+      float: right;
+      margin-top: -90px;
+      padding: 20px;
+    }
+
+    .icons .btn {
+      margin-top: -6px;
+    }
+
+    
+
+    .card {
+      border: 2px solid black;
+      margin-bottom: 2px;
+    }
+
+    .card img {
+      height: 200px;
+      width: 250px;
+      margin-top: 10px;
+      margin-left: 20px;
+      border: 2px solid rosybrown;
+    }
+
+    .card img:hover {
+      transform: scale(1.1)
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="container-fluid">
+
+      <div class="burger">
+        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          <i class="fa-sharp fa-solid fa-bars fa-2x" style="color:antiquewhite;"></i>
+        </button>
+      </div>
+
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcanvas-body" style="background-color:#ff6666;">
+            <a href="#" style="font-size: 30px;text-decoration: none;color:dimgray;"><i
+                class="fa-solid fa-house-chimney fa-1x" style="color:white;padding:10px;"></i>Home</a><br>
+            <a href="#" style="font-size: 30px;text-decoration: none;color:dimgray;"><i
+                class="fa-solid fa-envelope fa-1x" style="color:white;padding:10px;"></i>Contact</a><br>
+            <a href="#" style="font-size: 30px;text-decoration: none;color:dimgray;;"><i
+                class="fa-solid fa-circle-question fa-1x" style="color:white;padding:10px;"></i>About</a><br>
+            <a href="#" style="font-size: 30px;text-decoration: none;color:dimgray;"><i class="fa-solid fa-bell fa-1x" style="color:white;padding:10px;">
+                </i>Notification</a><br>
+
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown">
+              Collections
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Combos</a></li>
+              <li><a class="dropdown-item" href="#">New Launched</a></li>
+              <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            </ul>
+          </div>
+
+
+          <!-- offcanvas body div -->
+        </div>
+      </div>
+
+      <!-- container fluid -->
+    </div>
+    <div class="icons">
+
+      <a href="#"><i class="fa-brands fa-square-facebook fa-2x" style="padding:8px;color:white;"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter fa-2x" style="padding:8px;color:white;"></i></a>
+
+      <a href="#"><i class="fa-solid fa-heart fa-2x" style="padding:8px;color:white"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping fa-2x" style="padding:8px;color:white"></i></a>
+
+      <a class="btn btn-light" href="http://127.0.0.1:5500/login.html" role="button">login</a>
+
+      
+    </div>
+  </div>
+
+  <!-- image in container fliud -->
+  <section class="firstimage">
+    <div class="container-fluid">
+
+      <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="Summer.jpg" style="height:600px;width:600px;">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="occation.jpg" style="height:600px;width:600px;">
+            </div>
+    
+      </div>
+    </div>
+
+  </section>
+
+  <section class="mcard">
+    <h1 style="text-align:center;margin-top:7px;color:#ff6666;">Newly Launched</h1>
+
+    <!-- container starts -->
+    <div class="container mt-5">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- col1 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="handbag2.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2499</b>
+                    <p class="card-text">Multicolor Shoulder Bag</p>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+              <!-- col2 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="handbag3.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2349</b>
+                    <p class="card-text">DimGrey Shoulder Bag</p>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col3 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="han4.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2239</b>
+                    <p class="card-text">DarkMagenta Shoulder Bag</p>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col4 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="han5.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2689</b>
+                    <p class="card-text">DarkSalmon Shoulder Bag</p>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- row div below -->
+            </div>
+            <!-- inner div of carrousel -->
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- co5 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="han6.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2279</b>
+                    <p class="card-text">Purple Shoulder Bag</p>
+                    <button type="button" class="btn btn-danger">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+              <!-- col6 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="han7.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2979</b>
+                    <p class="card-text">Red Shoulder Bag</p>
+                    <button type="button" class="btn btn-danger">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col7 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="han8.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2429</b>
+                    <p class="card-text">Blue Shoulder Bag</p>
+                    <button type="button" class="btn btn-danger">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col8 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="han9.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2919</b>
+                    <p class="card-text">Print&Yellow Shoulder Bag</p>
+                    <button type="button" class="btn btn-danger">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- row div below -->
+            </div>
+
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="lcard">
+
+
+    <!-- container starts -->
+    <div class="container mt-5">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- col1 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="multicute1.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2399</b>
+                    <p class="card-text">chrochet Lavendar</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- col2 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="chrochet10.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2499</b>
+                    <p class="card-text">chrochet Yellow</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col3 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="chrochet18.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2779</b>
+                    <p class="card-text">chrochet White&Yellow</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col4 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="chrochet22.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2339</b>
+                    <p class="card-text">chrochet Pale Green</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- row div below -->
+            </div>
+            <!-- inner div of carrousel -->
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- co5 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="chrochet8.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2449</b>
+                    <p class="card-text">chrochet Green&Crimson</p>
+                    <button type="button" class="btn btn-warning">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+              <!-- col6 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="chrochet16.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2199</b>
+                    <p class="card-text">chrochet Multicolor</p>
+                    <button type="button" class="btn btn-warning">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col7 -->
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="chrochet14.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2739</b>
+                    <p class="card-text">chrochet Pinky</p>
+                    <button type="button" class="btn btn-warning">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col8 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="chrochet19.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2229</b>
+                    <p class="card-text">chrochet Yellow&Gold</p>
+                    <button type="button" class="btn btn-warning">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- row div below -->
+            </div>
+
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="fcard">
+
+    <!-- container starts -->
+    <div class="container mt-5">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- col1 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="cute1.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.3299</b>
+                    <p class="card-text">Messenger Pinkyprint</p>
+                    <button type="button" class="btn btn-danger">Add to Cart</button>
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- col2 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="cute2.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2859</b>
+                    <p class="card-text">Messenger Lightrosy</p>
+                    <button type="button" class="btn btn-danger">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col3 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="cute3.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2879</b>
+                    <p class="card-text">Messenger Blanchedalmond</p>
+                    <button type="button" class="btn btn-danger">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col4 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="cute4.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2939</b>
+                    <p class="card-text">Messenger antiquewhite</p>
+                    <button type="button" class="btn btn-danger">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- row div below -->
+            </div>
+            <!-- inner div of carrousel -->
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- co5 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="twobags.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.1599</b>
+                    <p class="card-text">Messenger Dimgrey</p>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+              <!-- col6 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="twobags6.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.4539</b>
+                    <p class="card-text">Messenger Palerose</p>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col7 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="twobags3.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.3529</b>
+                    <p class="card-text">Messenger Midnightblue</p>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col8 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="twobags7.jpg" class="card-img-top">
+                  <div class="card-body"><b>Rs.2569</b>
+                    <p class="card-text">Messenger Multiprint</p>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- row div below -->
+            </div>
+
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </div>
+  </section>
+  <hr>
+  <section>
+    <div class="para">
+      <div class="container bg-light">
+
+     
+      <div class="row">
+        <div class="col-12">
+          <h1></h1>
+          <p style="text-align:justify;font-size:20px;font-family:cursive;color:#ff6666;">Lovely Baggies is a 100% Vegan & Proudly Indian brand. We make laptop bags, handbags, women's office bags, female
+            wallets, mini wallets, sling bags, bucket bags, backpacks, travel pouches .We use Ikat
+            fabric and Jute Khadi fabric to make vegan leather bags and other vegan products. All bags are handcrafted
+            by expert artisans. We only sell online and can ship to all over India. Our products are a great choice for
+            office goers, homemakers and college students. Many people also choose our products for gifts in Weddings,
+            Anniversary, Diwali, Holi, Christmas, New Year, Karwa Chauth, Valentine's Day, Women's Day. </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+
+</html>
